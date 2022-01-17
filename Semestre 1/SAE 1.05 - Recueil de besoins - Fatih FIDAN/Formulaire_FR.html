@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="FR">
+  <head>
+    <meta charset="utf-8">
+    <title>Notre mariage - Formulaire - FR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" sizes="16x16" href="img/ico.png">
+    <link rel="stylesheet" href="script/style.css" />
+    <script src="script/animation.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  </head>
+
+  <body>
+
+<!-- barre de navigation -->
+    <div id='navigation'>
+      <nav class="barre_de_navigation">
+        <div class="mariage_titre">Notre mariage</div>
+          <a href="#" class="bouton_3_barres">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+
+        <div class="barre_de_navigation_liens">
+          <ul>
+            <li><a href="Accueil_FR.html">Accueil</a></li>
+            <li><a href="Formulaire_FR.html">Formulaire</a></li>
+            <li><a href="Programme_de_la_journ&#xE9;e_FR.html">Programme de la journ&#xE9;e</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+<!-- image qui bouge -->
+    <div class="diapo">
+      <img src="img/Diapo/bastia.jpg" alt="Bastia" class="img__diapo active"/>
+      <img src="img/Diapo/desert_agriates.jpg" alt="Desert des Agriates" class="img__diapo"/>
+      <img src="img/Diapo/djerba1.jpg" alt="Djerba" class="img__diapo"/>
+      <img src="img/Diapo/yacht.jpg" alt="Yacht" class="img__diapo"/>
+      <div class="suivant">
+        <i class="fas fa-chevron-circle-right"></i>
+      </div>
+      <div class="precedent">
+        <i class="fas fa-chevron-circle-left"></i>
+      </div>
+    </div>
+
+
+<!-- Element principal -->
+    <div class="principal">
+      <div class="boite_invisible">
+        <!-- Formulaire -->
+        <section class="Formulaire_by_Fatih">
+          <div>
+            <h2 class="titre_formulaire">Formulaire :</h2>
+            <form action="Invitation_FR.html" method="post">
+              <input type="email" placeholder="Adresse mail" required="required"/>
+              <input type="text" placeholder="Nom - Pr&#xE9;nom" required="required"/>
+              <input type="text" placeholder="&#xCA;tes-vous disponible du 27/05/22 au 29/05/22 ?" required="required"/>
+              <input type="text" placeholder="Pr&#xE9;voyez-vous de venir plus t&#xF4;t ?" required="required"/>
+              <input type="text" placeholder="Vous venez &#xE0; combien ?" required="required"/>
+              <input type="text" placeholder="Ou allez-vous s&#xE9;journer ?" required="required"/>
+              <input type="text" placeholder="Avez-vous besoin d'une chambre d'h&#xF4;tel ?" required="required"/>
+              <input type="text" placeholder="&#xCA;tes-vous v&#xE9;hicul&#xE9; ?" required="required"/>
+              <input type="text" placeholder="&#xCA;tes-vous v&#xE9;g&#xE9;tariens ?" required="required"/>
+              <input type="text" placeholder="Est-ce que vous mangez halal ?" required="required"/>
+              <input type="text" placeholder="Avez-vous des allergies ?" required="required"/>
+              <input type="text" placeholder="Voulez-vous participer &#xE0; la visite guid&#xE9;e (Desert des Agriates) ?" required="required"/>
+              
+              <div class="date_formulaire">
+              <label>Date d'arriv&#xE9;e <input class="date_formulaire2" type="date" min="1900-01-01" max="2100-01-01" required="required"/></label>
+              <label>Date de d&#xE9;part <input class="date_formulaire2" type="date" min="1900-01-01" max="2100-01-01" required="required"/></label>
+              </div>
+
+              <fieldset>Est-ce que vous poss&#xE9;dez le pass sanitaire ? 
+                  <div class="Oui_Non_by_Fatih"><br/>
+                      <input type="radio" name="oui_et_non" class="oui_et_non OUI" id="OUI" checked><label for="OUI">Oui</label>
+                      <input type="radio" name="oui_et_non" class="oui_et_non NON" id="NON" checked><label for="NON">Non</label>
+                  </div>
+              </fieldset>
+              <button type="submit">Envoyer</button>
+            </form>
+          </div>
+        </section>
+      </div>
+
+      <div class="boite_droite">
+        <!-- Meteo -->
+        <div class="boite_meteo">
+          <div class="titre_meteo"><p>Meteo</p></div>
+          <div class="notification_meteo"></div>
+          <div class="boite_info_meteo">
+            <div class="meteo_icon"><img src="img/icons/unknown.png" alt=""></div>
+            <div class="meteo_temperature"><p>- &#xB0;<span>C</span></p></div>
+            <div class="meteo_description"><p> - </p></div>
+            <div class="meteo_localisation"><p>-</p></div>
+          </div>
+        </div>
+
+        <!-- Donation -->
+        <div class="boite_donation">
+          <img src="img/piece.png" alt="piece"/>
+          <h2>Cagnotte</h2><p>Une cagnotte est organis&#xE9;e pour payer notre voyage au soleil, vous pouvez y participer si vous le souhaitez.</p>
+          <a href="https://www.paypal.com/donate/?hosted_button_id=NC4C5SVVT36N2" target="_blank" class="pp paypal"><i class="fab fa-paypal"></i></a>
+        </div>
+      </div>
+    </div>
+
+<!-- CHAT -->
+    <div class="chat_bot">
+        <button id="bouton_chat" type="button" class="chat_plie">Discutons ensemble !</button>
+
+        <div class="content">
+            <div class="tout_chat">
+                <div class="boite_chat_ext">
+                    <div class="tout_boite_chat">
+                        <div id="boite_chat">
+                            <h5 id="chat_tps">.</h5>
+                            <p id="msg_du_bot" class="texte_bot"><span>Loading...</span></p>
+                        </div>
+
+                        <div class="barre_ecriture">
+                            <div id="msg_utilisateur">
+                                <input id="ecrire_msg" class="boite_a_ecrire" type="text" name="msg" placeholder="Appuyez sur 'Entr&#xE9;e' pour envoyer un message">
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div id="barre_du_chat"><p></p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- bas de page -->
+    <footer class="bas_de_page">
+      <h2 class="compte_a_rebour">.</h2>
+
+      <ul>
+        <li><a href="Inviter_FR.html">Listes des invit&#xE9;es</a></li>
+        <li><p>|</p></li>
+        <li><a href="A_propos_de_nous_FR.html">A propos de nous</a></li>
+        <li><p>|</p></li>
+        <li><a href="Galerie_de_photos_FR.html">Galerie de photos</a></li>
+      </ul>
+
+      <div class="reseaux_yitt">
+        <a href="reseaux/Youtube.html"><i class="fab fa-youtube"></i></a>
+        <a href="reseaux/Instagram.html"><i class="fab fa-instagram"></i></a>
+        <a href="reseaux/Twitter.html"><i class="fab fa-twitter"></i></a>
+        <a href="reseaux/Tiktok.html"><i class="fab fa-tiktok"></i></a>
+      </div>
+
+      <div class="language">
+        <a href="Formulaire_FR.html"><img class="language_drapeau" src="img/Drapeaux/france.png" alt="france"/></a>
+        <a href="Formulaire_EN.html"><img class="language_drapeau" src="img/Drapeaux/USA.png" alt="usa"/></a>
+        <a href="Formulaire_AR.html"><img class="language_drapeau" src="img/Drapeaux/maroc.png" alt="maroc"/></a>
+        <a href="Formulaire_ES.html"><img class="language_drapeau" src="img/Drapeaux/espagne.webp" alt="espagne"/></a>
+        <a href="Formulaire_IT.html"><img class="language_drapeau" src="img/Drapeaux/italie.avif" alt="italie"/></a>
+      </div>
+
+      <p class="copyright">Fait par : Fatih Fidan @ 2021</p>
+    </footer>
+
+  </body>
+</html>

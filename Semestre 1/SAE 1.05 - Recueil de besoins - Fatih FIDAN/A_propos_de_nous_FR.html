@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="FR">
+  <head>
+    <meta charset="UTF-8">
+    <title>Notre mariage - A propos de nous - FR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" sizes="16x16" href="img/ico.png">
+    <link rel="stylesheet" href="script/style.css" />
+    <script src="script/animation.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  </head>
+
+  <body>
+<!-- barre de navigation -->
+    <div id='navigation'>
+      <nav class="barre_de_navigation">
+        <div class="mariage_titre">Notre mariage</div>
+          <a href="#" class="bouton_3_barres">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+
+        <div class="barre_de_navigation_liens">
+          <ul>
+            <li><a href="Accueil_FR.html">Accueil</a></li>
+            <li><a href="Formulaire_FR.html">Formulaire</a></li>
+            <li><a href="Programme_de_la_journ&#xE9;e_FR.html">Programme de la journ&#xE9;e</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+<!-- image qui bouge -->
+    <div class="diapo">
+      <img src="img/Diapo/bastia.jpg" alt="Bastia" class="img__diapo active"/>
+      <img src="img/Diapo/desert_agriates.jpg" alt="Desert des Agriates" class="img__diapo"/>
+      <img src="img/Diapo/djerba1.jpg" alt="Djerba" class="img__diapo"/>
+      <img src="img/Diapo/yacht.jpg" alt="Yacht" class="img__diapo"/>
+      <div class="suivant">
+        <i class="fas fa-chevron-circle-right"></i>
+      </div>
+      <div class="precedent">
+        <i class="fas fa-chevron-circle-left"></i>
+      </div>
+    </div>
+
+
+<!-- Element principal -->
+    <div class="principal">
+      <div class="boite_gauche">
+        <div class="Dana_Ribati">
+          <img class="img_couple" src="img/personnages/dana.png" alt="Dana_Ribati"/>
+          <ul>
+            <li>&#xC2;ge : 26 ans</li>
+            <li>Lieu de naissance : Paris, &#xCE;le-de-France</li>
+            <li>Lieu d’habitation : Avenue Beauregard, Cannes, PACA</li>
+            <li>Profession : mod&#xE8;le, youtubeuse</li>
+            <li>Je suis maintenant depuis 9 ans sur Youtube sur ma cha&#xEE;ne @theonlydana. Je suis une influenceuse lifestyle et makeup. &#xC0; force d’&#xEA;tre invit&#xE9;e, j’ai r&#xE9;ussi &#xE0; d&#xE9;crocher 
+            un contrat d’ambassadrice chez Sephora, et j’ai des voyages sponsoris&#xE9;s tout le temps. &#xC0; force de voyager, j’ai tout un r&#xE9;seau de copines partout, c’est g&#xE9;nial. 
+            J’adore les voyages, le soleil, la mode.</li>
+          </ul>
+        </div>
+
+        <div class="Al_Bonettrio">
+          <img class="img_couple" src="img/personnages/al.png" alt="Al_Bonettrio"/>
+          <ul>
+            <li>&#xC2;ge : 31 ans</li>
+            <li>Lieu de naissance : Lyon, ARA</li>
+            <li>Lieu d’habitation : Rue Simone de Beauvoir, V&#xE9;nissieux, ARA</li>
+            <li>Profession : Guide touristique</li>
+            <li>Je suis guide &#xE0; Lyon, mais j&#x2019;aimerais bouger et &#xE7;a pourrait &#xEA;tre une occasion. J’ai profit&#xE9; de la fin du COVID pour explorer d’autres villes fran&#xE7;aises. 
+            Tout le monde m’adore, je parle suffisamment 5 langues pour faire des visites guid&#xE9;es du Vieux Lyon et autres grands lieux touristiques. J’adore voir les gens, 
+            je lis beaucoup et je fais du tennis. Alors, s’il-vous-pla&#xEE;t, faites quelque chose qui me correspond !</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="boite_droite">
+        <!-- Meteo -->
+        <div class="boite_meteo">
+          <div class="titre_meteo"><p>Meteo</p></div>
+          <div class="notification_meteo"></div>
+          <div class="boite_info_meteo">
+            <div class="meteo_icon"><img src="img/icons/unknown.png" alt=""></div>
+            <div class="meteo_temperature"><p>- &#xB0;<span>C</span></p></div>
+            <div class="meteo_description"><p> - </p></div>
+            <div class="meteo_localisation"><p>-</p></div>
+          </div>
+        </div>
+
+        <!-- Donation -->
+        <div class="boite_donation">
+          <img src="img/piece.png" alt="piece"/>
+          <h2>Cagnotte</h2><p>Une cagnotte est organis&#xE9;e pour payer notre voyage au soleil, vous pouvez y participer si vous le souhaitez.</p>
+          <a href="https://www.paypal.com/donate/?hosted_button_id=NC4C5SVVT36N2" target="_blank" class="pp paypal"><i class="fab fa-paypal"></i></a>
+        </div>
+      </div>
+    </div>
+
+<!-- CHAT -->
+    <div class="chat_bot">
+        <button id="bouton_chat" type="button" class="chat_plie">Discutons ensemble !</button>
+
+        <div class="content">
+            <div class="tout_chat">
+                <div class="boite_chat_ext">
+                    <div class="tout_boite_chat">
+                        <div id="boite_chat">
+                            <h5 id="chat_tps">.</h5>
+                            <p id="msg_du_bot" class="texte_bot"><span>Loading...</span></p>
+                        </div>
+
+                        <div class="barre_ecriture">
+                            <div id="msg_utilisateur">
+                                <input id="ecrire_msg" class="boite_a_ecrire" type="text" name="msg" placeholder="Appuyez sur 'Entr&#xE9;e' pour envoyer un message">
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div id="barre_du_chat"><p></p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- bas de page -->
+    <footer class="bas_de_page">
+     
+      <h2 class="compte_a_rebour">.</h2>
+
+      <ul>
+        <li><a href="Inviter_FR.html">Listes des invit&#xE9;es</a></li>
+        <li><p>|</p></li>
+        <li><a href="A_propos_de_nous_FR.html">A propos de nous</a></li>
+        <li><p>|</p></li>
+        <li><a href="Galerie_de_photos_FR.html">Galerie de photos</a></li>
+      </ul>
+
+      <div class="reseaux_yitt">
+        <a href="reseaux/Youtube.html"><i class="fab fa-youtube"></i></a>
+        <a href="reseaux/Instagram.html"><i class="fab fa-instagram"></i></a>
+        <a href="reseaux/Twitter.html"><i class="fab fa-twitter"></i></a>
+        <a href="reseaux/Tiktok.html"><i class="fab fa-tiktok"></i></a>
+      </div>
+
+      <div class="language">
+        <a href="A_propos_de_nous_FR.html"><img class="language_drapeau" src="img/Drapeaux/france.png" alt="france"/></a>
+        <a href="A_propos_de_nous_EN.html"><img class="language_drapeau" src="img/Drapeaux/USA.png" alt="usa"/></a>
+        <a href="A_propos_de_nous_AR.html"><img class="language_drapeau" src="img/Drapeaux/maroc.png" alt="maroc"/></a>
+        <a href="A_propos_de_nous_ES.html"><img class="language_drapeau" src="img/Drapeaux/espagne.webp" alt="espagne"/></a>
+        <a href="A_propos_de_nous_IT.html"><img class="language_drapeau" src="img/Drapeaux/italie.avif" alt="italie"/></a>
+      </div>
+
+      <p class="copyright">Fait par : Fatih Fidan @ 2021</p>
+   
+    </footer>
+
+  </body>
+</html>

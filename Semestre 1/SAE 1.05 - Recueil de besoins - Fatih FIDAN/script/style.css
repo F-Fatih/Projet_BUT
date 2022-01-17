@@ -1,0 +1,185 @@
+/* Principal */
+*{margin:0; padding:0; box-sizing:border-box; outline:none; -webkit-box-sizing-:border-box;}
+html{box-sizing:border-box;}
+body{font-family:Helvetica, sans-serif; font-size:20px; margin:0px; padding:0px; line-height:1.5; background:url("background.png") no-repeat center fixed; -webkit-background-size:cover;}
+*,*:before,*:after{box-sizing:inherit;}
+
+
+
+/* Barre de navigation */
+.barre_de_navigation{display:flex; position:sticky; justify-content:space-between; align-items:center; background-color:#c33c54; color:white; filter: drop-shadow(0 0 0.75rem black);}
+.fixNavigation{z-index:50; position:sticky; top:0;}
+.mariage_titre{font-size:1.5rem; margin:.5rem;}
+.barre_de_navigation_liens{height: 100%;}
+.barre_de_navigation_liens ul{display:flex; list-style:none; margin:0; padding:0;}
+.barre_de_navigation_liens li a{display: block; text-decoration:none; color:white; padding:1rem;}
+.barre_de_navigation_liens li:hover{background-color: #d1415b;}
+.bouton_3_barres{position:absolute; top:.75rem; right:1rem; display:none; flex-direction:column; justify-content:space-between; width:30px; height:20px;}
+.bouton_3_barres .bar{height:3px; width:100%; background-color:white; border-radius:10px;}
+@media (max-width: 800px){
+  .barre_de_navigation{flex-direction:column; align-items:flex-start;}
+  .bouton_3_barres{display:flex;}
+  .barre_de_navigation_liens{display:none; width:100%;  }
+  .barre_de_navigation_liens ul{width:100%; flex-direction:column;}
+  .barre_de_navigation_liens ul li{text-align:center;}
+  .barre_de_navigation_liens ul li a{padding:.5rem 1rem;}
+  .barre_de_navigation_liens.active{display:flex;}
+}
+
+
+
+/* Diapo */
+.diapo{height:50vh; position:relative; margin:auto;}
+.diapo img{object-fit:cover; height:100%; width:100%; position:absolute; top:0; left:0; opacity:0; transition:opacity .5s;}
+.diapo img.active{opacity:1;}
+.suivant, .precedent{color:white; font-size:3rem; position:absolute; top:50%; transform:translateY(-50%); cursor: pointer;}
+.suivant{right: 1rem;}
+.precedent{left: 1rem;}
+
+
+
+/* Meteo */
+.boite_meteo{width:auto; background-color:white; display:block; margin:0 auto; margin-bottom:10px; border-radius:10px; padding-bottom:50px;}
+.titre_meteo{font-size:1em; height:50px; border-radius:10px 10px 0 0;}
+.titre_meteo p{text-align:center; padding:15px; margin:0 auto; font-size:1.2em; color:#293251;}
+.notification_meteo{background-color:#f8d7da; display:none;}
+.notification_meteo p{color:#721c24; font-size:1em; margin:0; text-align:center; padding:10px 0;}
+.boite_info_meteo{width:auto; height:260px; background-color:#F4F9FF;}
+.meteo_icon{width:auto; height:128px;}
+.meteo_icon img{display:block; margin:0 auto; padding-bottom:30px;}
+.meteo_temperature{width:auto; height:85px; padding:0;}
+.meteo_temperature p{padding:0; margin:0; color:#293251; font-size:4em; text-align:center; cursor:pointer;}
+.meteo_temperature span{color:#293251; font-size:.5em;}
+.meteo_description p{padding:8px; margin:0; color:#293251; text-align:center; font-size:1.2em;}
+.meteo_localisation p{margin:0; padding:0; color:#293251; text-align:center; font-size:0.8em;}
+
+
+
+/* Cagnotte */
+.boite_donation{background-color:white; border-radius:20px; padding:40px 60px; position:relative; margin:auto;}
+.boite_donation img{margin-top:-10px; width:50px;}
+.boite_donation h2{margin:0; padding-bottom:10px; font-size:30px; text-align:center;}
+.boite_donation p{line-height:24px; margin-bottom:10px;}
+.pp{border-radius:5px; color:white; padding:10px 15px; text-decoration:none; display:inline-block;}
+.paypal{background-color:#0070ba; margin-right:10px;}
+
+
+
+/* Formulaire */
+.titre_formulaire{margin-bottom:10px; color:white;}
+form input[type="text"]{width:100%; margin-bottom:16px; padding:16px; color:#565264; border:1px solid #565264; border-radius:100px;}
+form input[type="text"]:hover{background-color:white;}
+form input[type="email"]{width:100%; margin-bottom:16px; padding:16px; color:#565264; border:1px solid #565264; border-radius:100px;}
+form input[type="email"]:hover{background-color:white;}
+/* Les dates */
+.date_formulaire{width:100%; margin-bottom:16px; padding:16px; color:#565264; border:1px solid #565264; border-radius:30px; background-color:white;}
+.date_formulaire2{width:100%; margin-bottom:16px; padding:16px; color:#565264; border:1px solid #565264; border-radius:30px; background-color:white;}
+/* Ni oui, ni non */
+fieldset{background-color:white; padding:16px; border-radius:25px; border:1px solid #565264; width:auto; margin:auto;}
+.Oui_Non_by_Fatih{margin-bottom:0px; margin-left:16px;}
+input[type="radio"].oui_et_non{display:none;}
+input[type="radio"].oui_et_non + label{padding:.5rem 1rem; font-size:1.25rem; line-height:1.5; border-radius:0.3rem; color:white; background-color:#565264; border:1px solid transparent; transition:all 0.5s ease-in-out;}
+input[type="radio"].oui_et_non.OUI:hover + label{background-color:green; border-color:darkgreen;}
+input[type="radio"].oui_et_non.OUI:checked + label{background-color:green; border-color:darkgreen;}
+input[type="radio"].oui_et_non.NON:hover + label{background-color:red; border-color:darkred;}
+input[type="radio"].oui_et_non.NON:checked + label{background-color:red; border-color:darkred;}
+/* Bouton envoyer */
+form button[type="submit"]{width:50%; height:auto; margin-top:15px; margin-bottom:auto; padding:20px; border:1px solid #FF758F; border-radius:100px;}
+form button[type="submit"]{font-weight:bold; color:white; text-transform:uppercase; background-color:#FF758F;}
+form button[type="submit"]:hover{background-color:#e990a0;}
+
+
+
+/* Google Maps */
+iframe{border-radius:50px; margin:auto;}
+.maps_gauche{width:48%; float:left; padding:20px; margin:1%;}
+.maps_droite{width:48%; float:right; padding:20px; margin:1%;}
+
+
+
+/* Bas de page */
+.bas_de_page{padding:40px 0; background-color:#565264;}
+.bas_de_page .reseaux_yitt{text-align:center; color:white; margin-top:15px;}
+.bas_de_page .reseaux_yitt a{font-size:24px; color:inherit; border:3px solid white; width:42px; height:42px; display:inline-block; text-align:center; border-radius:50%; margin:0 8px; opacity:0.75;}
+.bas_de_page .reseaux_yitt a:hover{opacity:0.9;}
+.bas_de_page ul{margin-top:0; padding:0; list-style:none; font-size:18px; line-height:1.6; margin-bottom:0; font-family:'Segoe UI'; text-align:center; font-weight:400; font-size:20px;}
+.bas_de_page ul a{color:inherit; text-decoration:none; opacity:0.8; font-size:30px;}
+.bas_de_page ul li{display:inline-block; padding:0 15px;}
+.bas_de_page ul li a:hover{opacity:1;}
+.bas_de_page .copyright{margin-top:5px; text-align:center; font-size:15px; color:white; opacity:0.75;}
+.language{margin-top:15px; text-align:center;}
+.language_drapeau{border-radius:50%; border:6px solid #706677; margin:8px; width:50px; height:50px;}
+
+
+
+/* Chat Bot*/
+.chat_bot{z-index: 49; position:fixed; bottom:0; right:50px; box-shadow:0 8px 16px 0 rgba(0, 0, 0, 0.2);}
+.chat_plie{background-color:rgb(195, 60, 84); color:white; cursor:pointer; padding:18px; width:350px; text-align:left; outline:none; font-size:18px; border-radius:10px 10px 0px 0px; border:3px solid white; border-bottom:none;}
+.content{max-height:0; overflow:hidden; transition:max-height 0.2s ease-out; background-color:#f1f1f1;}
+.tout_chat{width:350px; background:white; text-align:center; overflow:auto; scrollbar-width:none; height:max-content; transition:max-height 0.2s ease-out;}
+.boite_chat_ext{min-height:500px; bottom:0%; position:relative;}
+.tout_boite_chat{max-height:500px; width:100%; position:absolute; bottom:0; left:0; scroll-behavior:smooth; hyphens:auto;}
+.tout_boite_chat::-webkit-scrollbar{display:none;}
+.barre_ecriture{display:flex; float:left; box-sizing:border-box; justify-content:space-between; width:100%; align-items:center; background-color:rgb(235, 235, 235); border-radius:10px 10px 0px 0px; padding:10px 0px 10px 10px;}
+#chat-icon:hover{opacity:.7;}
+#msg_utilisateur{width:75%;}
+.boite_a_ecrire{float:left; border:none; box-sizing:border-box; width:100%; border-radius:10px; padding:10px; font-size:16px; color:#000; background-color:white; outline:none}
+.userText{margin-bottom:10px; color:white; font-family:Helvetica; font-size:16px; font-weight:normal; text-align:right; clear:both;}
+.userText span{line-height:1.5em; display:inline-block; background:#FF758F; padding:10px; border-radius:8px; border-bottom-right-radius:2px; max-width:80%; margin-right:10px; animation:floatup .5s forwards}
+.texte_bot{margin-bottom:10px; color:000; font-family:Helvetica; font-weight:normal; font-size:16px; text-align:left;}
+.texte_bot span{line-height:1.5em; display:inline-block; background:#e0e0e0; padding:10px; border-radius:8px; border-bottom-left-radius:2px; max-width:80%; margin-left:10px; animation:floatup .5s forwards}
+@keyframes floatup{
+    from{transform:translateY(14px); opacity:.0;}
+    to {transform:translateY(0px); opacity:1;}}
+@media screen and (max-width:600px){
+    .tout_chat{width:100%; border-radius:0px; clear: both; }
+    .chat_bot {position:fixed; bottom:0; right:0; width:100%; clear: both; z-index:49;}
+    .chat_plie {width:100%; border:0px; border-top:3px solid white; border-radius:0px;clear:both;}}
+
+
+
+/* Compte à rebour*/
+.compte_a_rebour{margin:0; padding-bottom:10px; color:white; font-size:50px; text-align:center;}
+
+
+
+/* MODIFICATION */
+a{color: white;}
+.principal{width:auto; border:0px; padding:20px; overflow:hidden; margin:auto;}
+.boite_droite{width:20%; float:right; padding:20px; margin:10px; text-align:center; background:#c33c54; border:2px solid #565264; border-radius:25px;}
+.boite_gauche{width:78%; float:left; padding:20px; background:#c33c54; border:2px solid #565264; border-radius:25px; color:white;}
+.boite_invisible{width:78%; float:left;}
+.boite_pdlj{width:78%; float:left; padding:2%; background:#c33c54; border:2px solid #565264; border-radius:25px; color:white;}
+.img_invitation{text-align:center; margin:auto; height:874px; width:620px; display:flex; border-radius:20px; filter:drop-shadow(0 0 0.75rem black);}
+section.Formulaire_by_Fatih > div{width:auto; padding:20px; text-align:center; background:#c33c54; border:2px solid #565264; border-radius:25px;}
+.inviter{float: left; list-style-type: none; padding-right: 50px}
+#texte_programme_de_la_journée{color:white; font-size:24px; list-style-type:none;}
+.programme_de_la_journée{width:auto; padding:20px; margin:1%; color:white;}
+.Dana_Ribati{width:48%; float:left; padding:20px; margin:1%; text-align:justify; color:white;}
+.Al_Bonettrio{width:48%; float:right; padding:20px; margin:1%; text-align:justify; color:white;}
+.img_couple{border:2mm solid #706677; border-radius:25%; height:200px; width:200px; text-align:center; margin:auto;  display:flex;}
+.les_drapeaux{width:100px; height:60px; text-align:center; margin:auto; display:flex; border-radius:8px; margin-bottom:10px;}
+
+
+.galerie_photos{margin-left:4%; background: #706677;}
+.les_photos{margin-right:2%; margin-bottom: 2%; background-color: #706677; float: left; width: 30%; border-radius: 30px; border: 6px solid #565264;}
+.les_photos img{width: 100%; height: 400px; border-radius: 25px; text-align: center;}
+.description_photos{padding: 15px; text-align: center;}
+
+@media (max-width: 1200px){
+  .boite_droite{width:100%; margin:auto; }
+  .boite_gauche{width:100%;margin-bottom: 10px;}
+  .boite_invisible{width:100%;margin-bottom: 10px;}
+  .boite_pdlj{width:100%; margin-bottom: 10px;}
+  .maps_gauche{width:100%;}
+  .maps_droite{width:100%;}
+  .inviter{margin-bottom: 50px;}
+  .Dana_Ribati{width: 100%; text-align: unset;}
+  .Al_Bonettrio{width: 100%; text-align: unset}
+  .img_invitation{height: 437px; width:310px;}
+  .compte_a_rebour{font-size: 30px;}
+  .galerie_photos{width: 100%; margin: auto;}
+  .les_photos{width: 100%;}
+  .les_photos img{width: 100%;}
+}
+

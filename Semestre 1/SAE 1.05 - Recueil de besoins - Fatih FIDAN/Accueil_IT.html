@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="IT">
+  <head>
+    <meta charset="utf-8">
+    <title>Notre mariage - Casa - IT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" sizes="16x16" href="img/ico.png">
+    <link rel="stylesheet" href="script/style.css" />
+    <script src="script/animation.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+  </head>
+
+  <body>
+
+<!-- barre de navigation -->
+    <div id='navigation'>
+      <nav class="barre_de_navigation">
+        <div class="mariage_titre">Notre mariage</div>
+          <a href="#" class="bouton_3_barres">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+
+        <div class="barre_de_navigation_liens">
+          <ul>
+            <li><a href="Accueil_IT.html">Casa</a></li>
+            <li><a href="Formulaire_IT.html">Modulo</a></li>
+            <li><a href="Programme_de_la_journ&#xE9;e_IT.html">Programma del giorno</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+<!-- image qui bouge -->
+    <div class="diapo">
+      <img src="img/Diapo/bastia.jpg" alt="Bastia" class="img__diapo active"/>
+      <img src="img/Diapo/desert_agriates.jpg" alt="Desert des Agriates" class="img__diapo"/>
+      <img src="img/Diapo/djerba1.jpg" alt="Djerba" class="img__diapo"/>
+      <img src="img/Diapo/yacht.jpg" alt="Yacht" class="img__diapo"/>
+      <div class="suivant">
+        <i class="fas fa-chevron-circle-right"></i>
+      </div>
+      <div class="precedent">
+        <i class="fas fa-chevron-circle-left"></i>
+      </div>
+    </div>
+
+<!-- Element principal -->
+    <div class="principal">
+      <div class="boite_gauche">
+        <h1>Casa</h1>
+      <br/>
+        <h2>Benvenuti !</h2>
+        <p>Ehi, ciao, abbiamo una notizia cos&#xEC; bella! Siete invitati al nostro WEDDING! Non &#xE8; fantastico? 😆</p>
+        <p>Vi spieghiamo perch&#xE9; abbiamo creato un sito web. Con questo sito potrete trovare informazioni sul giorno del nostro matrimonio!</p>
+        <p>Dovrai prima compilare il modulo, in modo che possiamo organizzare una giornata indimenticabile e che tu possa passare una giornata di CRAZY! 🤩</p>
+      <br/>
+        <h2>Il nostro incontro</h2>
+        <p>Ci siamo incontrati al <a href="https://fr.wikipedia.org/wiki/Djerba">Djerba</a> poco prima della crisi dei covidi, Dana era in viaggio per fare alcuni SUPER vlog per il suo canale YouTube! 
+          E Al era la nostra guida turistica, ci ha mostrato questo posto fantastico! Da allora ci siamo tenuti in contatto e il sentimento &#xE8; cresciuto 😍 e abbiamo finalmente deciso di fare un passo avanti e sposarci. ❤️</p>
+      <br/>
+        <h2>Informazioni sul giorno</h2>
+        <p>All'inizio della giornata Al ci far&#xE0; fare un tour del <em>&#xAB; <a href="https://fr.wikipedia.org/wiki/Corse">Corsica</a> &#xBB;</em> 😊, visiteremo 
+          il <em>&#xAB; <a href="https://fr.wikipedia.org/wiki/D%C3%A9sert_des_Agriates">Deserto di Agriates</a> &#xBB;</em>. Dopo la visita andremo al municipio di
+          <em>&#xAB; <a href="https://fr.wikipedia.org/wiki/Bastia">Bastia</a> &#xBB;</em> per celebrare il matrimonio civile. La giornata si concluder&#xE0; la sera 🌆 con una festa sullo yacht.</p>
+        <p><em>Uno yacht &#xE8; stato utilizzato per fare il viaggio verso &#xAB; <a href="https://fr.wikipedia.org/wiki/Corse ">Corsica</a> &#xBB;</em> 🚢.</p>
+        <p><strong>[INFORMAZIONI] :</strong>Si prega di compilare il modulo in modo che possiamo determinare il numero di minibus da noleggiare.</p>
+      <br/>
+        <h2>Ospitare</h2>
+        <p>Abbiamo pensato a voi! Lo yacht &#xE8; dotato di cabine per pi&#xF9; di 300 passeggeri 😉 &#xE8; possibile pernottare sullo yacht gratuitamente. Viene anche offerto il pasto, 
+          Lo yacht &#xE8; progettato per il comfort. &#xE8; possibile trascorrere una piacevole notte nello yacht dopo la cerimonia.</p>
+      </div>
+
+      <div class="boite_droite">
+        <!-- Meteo -->
+        <div class="boite_meteo">
+          <div class="titre_meteo"><p>Weather</p></div>
+          <div class="notification_meteo"></div>
+          <div class="boite_info_meteo">
+            <div class="meteo_icon"><img src="img/icons/unknown.png" alt=""></div>
+            <div class="meteo_temperature"><p>- &#xB0;<span>C</span></p></div>
+            <div class="meteo_description"><p> - </p></div>
+            <div class="meteo_localisation"><p>-</p></div>
+          </div>
+        </div>
+
+        <!-- Donation -->
+        <div class="boite_donation">
+          <img src="img/piece.png" alt="piece"/>
+          <h2>Montepremi</h2><p>Si sta organizzando un gattino per pagare il nostro viaggio al sole, potete partecipare se lo desiderate.</p>
+          <a href="https://www.paypal.com/donate/?hosted_button_id=NC4C5SVVT36N2" target="_blank" class="pp paypal"><i class="fab fa-paypal"></i></a>
+        </div>
+      </div>
+    </div>
+
+<!-- CHAT -->
+    <div class="chat_bot">
+        <button id="bouton_chat" type="button" class="chat_plie">Parliamo insieme !</button>
+
+        <div class="content">
+            <div class="tout_chat">
+                <div class="boite_chat_ext">
+                    <div class="tout_boite_chat">
+                        <div id="boite_chat">
+                            <h5 id="chat_tps">.</h5>
+                            <p id="msg_du_bot" class="texte_bot"><span>Loading...</span></p>
+                        </div>
+
+                        <div class="barre_ecriture">
+                            <div id="msg_utilisateur">
+                                <input id="ecrire_msg" class="boite_a_ecrire" type="text" name="msg" placeholder="Premi 'Enter' per inviare un messaggio">
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div id="barre_du_chat"><p></p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- bas de page -->
+    <footer class="bas_de_page">
+     
+      <h2 class="compte_a_rebour">.</h2>
+
+      <ul>
+        <li><a href="Inviter_IT.html">Elenco degli ospiti</a></li>
+        <li><p>|</p></li>
+        <li><a href="A_propos_de_nous_IT.html">Chi siamo</a></li>
+        <li><p>|</p></li>
+        <li><a href="Galerie_de_photos_IT.html">Galleria fotografica</a></li>
+      </ul>
+
+      <div class="reseaux_yitt">
+        <a href="reseaux/Youtube.html"><i class="fab fa-youtube"></i></a>
+        <a href="reseaux/Instagram.html"><i class="fab fa-instagram"></i></a>
+        <a href="reseaux/Twitter.html"><i class="fab fa-twitter"></i></a>
+        <a href="reseaux/Tiktok.html"><i class="fab fa-tiktok"></i></a>
+      </div>
+
+      <div class="language">
+        <a href="Accueil_FR.html"><img class="language_drapeau" src="img/Drapeaux/france.png" alt="france"/></a>
+        <a href="Accueil_EN.html"><img class="language_drapeau" src="img/Drapeaux/USA.png" alt="usa"/></a>
+        <a href="Accueil_AR.html"><img class="language_drapeau" src="img/Drapeaux/maroc.png" alt="maroc"/></a>
+        <a href="Accueil_ES.html"><img class="language_drapeau" src="img/Drapeaux/espagne.webp" alt="espagne"/></a>
+        <a href="Accueil_IT.html"><img class="language_drapeau" src="img/Drapeaux/italie.avif" alt="italie"/></a>
+      </div>
+
+      <p class="copyright">Fatto da : Fatih Fidan @ 2021</p>
+  
+    </footer>
+
+  </body>
+</html>

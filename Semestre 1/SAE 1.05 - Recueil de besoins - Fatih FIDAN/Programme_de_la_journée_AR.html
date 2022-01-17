@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="AR">
+  <head>
+    <meta charset="utf-8">
+    <title>Notre mariage - برنامج اليوم - AR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" sizes="16x16" href="img/ico.png">
+    <link rel="stylesheet" href="script/style.css" />
+    <script src="script/animation.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  </head>
+
+  <body>
+
+<!-- barre de navigation -->
+    <div id='navigation'>
+      <nav class="barre_de_navigation">
+        <div class="mariage_titre">Notre mariage</div>
+          <a href="#" class="bouton_3_barres">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+
+        <div class="barre_de_navigation_liens">
+          <ul>
+            <li><a href="Accueil_AR.html">ترحيب</a></li>
+            <li><a href="Formulaire_AR.html">استمارة</a></li>
+            <li><a href="Programme_de_la_journ&#xE9;e_AR.html">برنامج اليوم</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+<!-- image qui bouge -->
+    <div class="diapo">
+      <img src="img/Diapo/bastia.jpg" alt="Bastia" class="img__diapo active"/>
+      <img src="img/Diapo/desert_agriates.jpg" alt="Desert des Agriates" class="img__diapo"/>
+      <img src="img/Diapo/djerba1.jpg" alt="Djerba" class="img__diapo"/>
+      <img src="img/Diapo/yacht.jpg" alt="Yacht" class="img__diapo"/>
+      <div class="suivant">
+        <i class="fas fa-chevron-circle-right"></i>
+      </div>
+      <div class="precedent">
+        <i class="fas fa-chevron-circle-left"></i>
+      </div>
+    </div>
+
+
+<!-- Element principal -->
+    <div class="principal">
+      <div class="boite_pdlj">
+        <div class="programme_de_la_journ&#xE9;e">
+          <h1 id="texte_accueil">برنامج اليوم</h1>
+        <br/>
+          <ul id="texte_programme_de_la_journ&#xE9;e">
+            <li><strong>27/05: 8 مساءً.</strong> - المغادرة من مرسيليا إلى باستيا</li>
+            <li><strong>28/05: 7 صباحًا</strong> - فطور الصباح</li>
+            <li><strong>8 ح</strong> - رحيل ل &#xAB; صحراء Agriates &#xBB;</li>
+            <li><strong>9:15 صباحًا</strong> - احصل على &#xAB; صحراء Agriates &#xBB;</li>
+            <li><strong>12 ح</strong> - وجبة افطار</li>
+            <li><strong>1 بعد الظهر</strong> - رحيل إلى باستيا</li>
+            <li><strong>2:15 مساءً</strong> - اذهب إلى باستيا</li>
+            <li><strong>3 م</strong> - زواج مدني</li>
+            <li><strong>6 مساءً</strong> - تناول العشاء</li>
+            <li><strong>8 مساءً</strong> - بداية الحفلة</li>
+            <li><strong>00h00</strong> - نهاية الحفلة</li>
+            <li><strong>29/05: 7 صباحًا</strong> - من باستيا إلى مرسيليا</li>
+          </ul>
+        </div>
+
+        <div class="carte_google">
+          <iframe class="maps_gauche" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d170928.45491331475!2d9.35839135562941!3d42.705402666758864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d72403b09b0971%3A0x10d63958a78a2b9d!2sBastia!5e0!3m2!1sfr!2sfr!4v1639828224313!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen=""></iframe>
+          <iframe class="maps_droite" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121345.31615431496!2d9.307336201262862!3d42.631897347400326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d0d2960bc2fc0d%3A0xc94b0dc83d3afe79!2sD%C3%A9sert%20des%20Agriates!5e0!3m2!1sfr!2sfr!4v1639828260651!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+      </div>
+
+      <div class="boite_droite">
+        <!-- Meteo -->
+        <div class="boite_meteo">
+          <div class="titre_meteo"><p>تقرير حالة ألطقس</p></div>
+          <div class="notification_meteo"></div>
+          <div class="boite_info_meteo">
+            <div class="meteo_icon"><img src="img/icons/unknown.png" alt=""></div>
+            <div class="meteo_temperature"><p>- &#xB0;<span>C</span></p></div>
+            <div class="meteo_description"><p> - </p></div>
+            <div class="meteo_localisation"><p>-</p></div>
+          </div>
+        </div>
+
+        <!-- Donation -->
+        <div class="boite_donation">
+          <img src="img/piece.png" alt="piece"/>
+          <h2>الفوز بالجائزة الكبرى</h2><p>يتم تنظيم القطة لدفع تكاليف رحلتنا إلى الشمس ، يمكنك المشاركة إذا كنت ترغب في ذلك.</p>
+          <a href="https://www.paypal.com/donate/?hosted_button_id=NC4C5SVVT36N2" target="_blank" class="pp paypal"><i class="fab fa-paypal"></i></a>
+        </div>
+      </div>
+    </div>
+
+<!-- CHAT -->
+    <div class="chat_bot">
+        <button id="bouton_chat" type="button" class="chat_plie">لنتحدث معا!</button>
+
+        <div class="content">
+            <div class="tout_chat">
+                <div class="boite_chat_ext">
+                    <div class="tout_boite_chat">
+                        <div id="boite_chat">
+                            <h5 id="chat_tps">.</h5>
+                            <p id="msg_du_bot" class="texte_bot"><span>Loading...</span></p>
+                        </div>
+
+                        <div class="barre_ecriture">
+                            <div id="msg_utilisateur">
+                                <input id="ecrire_msg" class="boite_a_ecrire" type="text" name="msg" placeholder="اضغط على 'دخول' لإرسال رسالة">
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div id="barre_du_chat"><p></p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- bas de page -->
+    <footer class="bas_de_page">
+     
+      <h2 class="compte_a_rebour">.</h2>
+
+      <ul>
+        <li><a href="Inviter_AR.html">قوائم الضيوف</a></li>
+        <li><p>|</p></li>
+        <li><a href="A_propos_de_nous_AR.html">في ما يخصنا</a></li>
+        <li><p>|</p></li>
+        <li><a href="Galerie_de_photos_AR.html">معرض الصور</a></li>
+      </ul>
+
+      <div class="reseaux_yitt">
+        <a href="reseaux/Youtube.html"><i class="fab fa-youtube"></i></a>
+        <a href="reseaux/Instagram.html"><i class="fab fa-instagram"></i></a>
+        <a href="reseaux/Twitter.html"><i class="fab fa-twitter"></i></a>
+        <a href="reseaux/Tiktok.html"><i class="fab fa-tiktok"></i></a>
+      </div>
+
+      <div class="language">
+        <a href="Programme_de_la_journ&#xE9;e_FR.html"><img class="language_drapeau" src="img/Drapeaux/france.png" alt="france"/></a>
+        <a href="Programme_de_la_journ&#xE9;e_EN.html"><img class="language_drapeau" src="img/Drapeaux/USA.png" alt="usa"/></a>
+        <a href="Programme_de_la_journ&#xE9;e_AR.html"><img class="language_drapeau" src="img/Drapeaux/maroc.png" alt="maroc"/></a>
+        <a href="Programme_de_la_journ&#xE9;e_ES.html"><img class="language_drapeau" src="img/Drapeaux/espagne.webp" alt="espagne"/></a>
+        <a href="Programme_de_la_journ&#xE9;e_IT.html"><img class="language_drapeau" src="img/Drapeaux/italie.avif" alt="italie"/></a>
+      </div>
+
+      <p class="copyright">مصنوع بواسطة : Fatih Fidan @ 2021</p>
+ 
+    </footer>
+
+  </body>
+</html>
