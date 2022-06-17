@@ -1,0 +1,94 @@
+1/
+sudo apt update 
+sudo apt upgrade
+
+
+2/
+sudo raspi-config 
+sudo systemctl stop postgresql.service
+sudo systemctl disable postgresql.service
+
+
+3/
+sudo apt install maria
+
+
+4/
+sudo useradd e12100070 --shell /bin/bash
+
+
+5/
+sudo apt install mariadb-server
+sudo apt install php-mysql
+
+
+6/
+sudo nano /etc/php/7.3/apache2/php.ini 	## Trouver "extension=pdo_mysql" et enlever le ";" puis sauvegarder
+
+sudo mysql
+CREATE DATABASE e12100070;
+CREATE USER 'e12100070'@'localhost' IDENTIFIED by '0000';
+GRANT ALL PRIVILEGES ON e12100070.* to 'e12100070'@'localhost';
+FLUSH PRIVILEGES;
+
+
+7/
+sudo mkdir /home/e12100070/public_html
+
+
+8/
+sudo systemctl status apache2		## Voir si il est bien actif sinon regarder SAE 1.03
+
+
+9/
+sudo mysql -ue12100070 -p			## Mettre MDP defini précédement 
+use e12100070
+CREATE TABLE personnes(Nom varchar(50), Prénom varchar(50));
+INSERT INTO personnes (Nom, Prénom) VALUES ('Jean Sans Terre', 'Edouard'), ('D’aquitaine', 'Éléonore'), ('Cœur de Lion', 'Richard');
+SELECT * FROM personnes;
+
+
+10/
+sudo touch /home/e12100070/public_html/index.php
+sudo nano /home/e12100070/public_html/index.php
+
+COPIE-COLLE
+
+<?php
+	$dbuser='e12100070'; // à changer !
+	$dbname='e12100070'; // à changer !
+	$password='0000'; // à changer !
+	try {
+		$conn=new PDO("mysql:host=localhost;dbname=$dbname", $dbuser, $password);
+	} catch (PDOException $e) {
+		die("Pb connexion base de données $dbname:" . $e->getMessage());
+	}
+	$sql = "SELECT * FROM personnes";
+	$req = $conn->query($sql);
+?>
+<html><head>Table personnes</head>
+<body>
+	<table>
+		<thead><tr><th>Nom</th><th>Prénom</th></tr></thead>
+		<tbody>
+			<?php while($row = $req->fetch(PDO::FETCH_ASSOC)) : ?>
+			<tr>
+				<td><?php echo htmlspecialchars($row['Nom']); ?></td>
+				<td><?php echo htmlspecialchars($row['Prénom']); ?></td>
+			</tr>
+			<?php endwhile; ?>
+		</tbody>
+	</table>
+</body>
+</html>
+
+
+11/
+links http://localhost/∼e12100070		## Si ca marche pas faite 'sudo apt install links'
+TEST sur navigateur (windows/mac/linux) --> http://192.168.1.18/~e12100070/index.php 
+
+
+12/
+Suivre le lien https://fr-wiki.ikoula.com/fr/Mise_en_place_de_phpMyAdmin_sous_debian_10
+juste modifier commande 'tar xvf phpMyAdmin-4.9.5-all-languages.tar.gz' par 'unzip phpMyAdmin-4.9.5-all-languages.tar.gz'
+
