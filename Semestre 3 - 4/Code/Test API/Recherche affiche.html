@@ -1,0 +1,48 @@
+<body>
+    <input id="searchbar" type="text" name="search" placeholder="Nom du film">
+    <button>Rechercher</button>
+</body>
+
+
+<script defer>
+var xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function() {
+  if (xhr.readyState === 4) {
+    var reponse = JSON.parse(xhr.responseText);
+    
+    var lien = reponse['Search'][0]['Poster'];
+    console.log(lien);
+
+    var img = document.createElement('img');
+    img.src = lien;
+    document.querySelector('body').appendChild(img);
+  }
+};
+    
+    
+var barre_recherche = document.querySelector('#searchbar')
+var bouton = document.querySelector('button')
+
+
+barre_recherche.addEventListener('keyup', function(){
+    nom_film = barre_recherche.value
+    
+    bouton.addEventListener('click', function(){
+    	var url = "http://www.omdbapi.com/?s=" + nom_film + "&apikey=ddab5d33"
+    	 
+    	xhr.open('GET', url);
+    	xhr.send();
+     });
+
+})
+
+
+
+
+
+
+
+
+
+
+</script>
