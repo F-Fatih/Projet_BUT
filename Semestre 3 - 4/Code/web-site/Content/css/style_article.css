@@ -1,0 +1,130 @@
+.degrade {
+    background: linear-gradient(to right, #003D60, #5E054A);
+  }
+
+.length-search {
+  width: 40vw;
+  margin-right: 2px;
+  }
+
+.margin-moon {
+  margin-left: 20px;
+  margin-right: 4px;
+  }
+
+.margin-switch {
+  margin-left: 4px;
+  margin-right: 8px;
+  }
+
+.logo-navbar {
+  width: 6vw;
+  margin:0px;
+  padding:0px;
+  }
+
+.main-image {
+  text-align: center;
+  color: white;
+  padding:7%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+
+.dragon {
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.99)), url("../img/dragon-banner.jpg");
+    }
+
+.tolkien {
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.99)), url("../img/tolkien-banner.jpg");
+    }
+
+.mercredi {
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.99)), url("../img/mercredi.jpg");
+    }
+
+.tlou {
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.99)), url("../img/tlou-banner.jpg");
+    }
+
+.topgun {
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.99)), url("../img/topgun-banner.jpg");
+    }
+
+.indent{
+    text-indent: 2em;
+    }
+
+.secondary-movie-topgun {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    border-radius: 8px;
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.99)), url("../img/topgun.png");
+    }
+
+.secondary-movie-mercredi {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    border-radius: 8px;
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.99)), url("../img/mercredi.jpg");
+    }
+
+.secondary-movie-tolkien {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    border-radius: 8px;
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.99)), url("../img/tolkien.jpg");
+    }
+
+.secondary-movie-tlou {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    border-radius: 8px;
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.99)), url("../img/tlou.png");
+    }
+
+.secondary-movie-dragon{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    border-radius: 8px;
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.99)), url("../img/dragon.jpg");
+    }
+
+.secondary-text {
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.explore-button {
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.white {
+  color: white;
+}

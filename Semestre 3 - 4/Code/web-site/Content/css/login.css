@@ -1,0 +1,64 @@
+.formLogin {
+    padding: 20px;
+    margin: 50px auto;
+    width: 25%;
+}
+
+.forms {
+    display: flex;
+}
+
+h1 {
+    text-align: center;
+    color: #f2f2f2;
+}
+
+label {
+    color: #f2f2f2;
+}
+
+.formLogin input,
+.formLogin select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #1a1a1a;
+    border: 2px solid #ffffff;
+    color: #666764;
+}
+
+.text {
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+
+.formLogin input[type="submit"] {
+    display: block;
+    margin: auto;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: white;
+    font-weight: bold;
+}
+.formLogin input[type="submit"]:hover {
+    display: block;
+    margin: auto;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #5d064b;
+    color:white;
+    border: 2px solid white;
+}
+
+
+@media screen and (max-width: 770px) {
+    /* Hero view */
+    .formLogin {
+        width: 45%;
+    }
+}
